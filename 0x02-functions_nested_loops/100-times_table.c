@@ -1,3 +1,4 @@
+include "main.h"
 /**
  * print_times_table -function that prints timetable
  * @n -length of time table 
@@ -59,6 +60,7 @@ void print_times_table(int n)
             _putchar(((prod-prod%100)/100)+'0');
             _putchar(((prod-prod%10)/10)+'0');
             _putchar((prod%10)+'0');
+        }
             else
             {
                 _putchar(' ');
