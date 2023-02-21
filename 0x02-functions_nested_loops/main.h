@@ -80,3 +80,10 @@ int add(int a, int b);
  * Returns: void
  */
 void print_to_98(int n);
+/**
+ * print_times_table -function to print timetable
+ * @n -n number of times to print time table 
+ *
+ * Returns: void
+ */
+void print_times_table(int n);
