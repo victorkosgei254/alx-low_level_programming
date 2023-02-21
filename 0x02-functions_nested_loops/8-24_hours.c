@@ -7,9 +7,9 @@ void jack_bauer(void)
     {
         for( min = 0; min < 60; min++ )
         {
-            _putchar(hour);
+            _putchar(hour + '0');
             _putchar(':');
-            _putchar(min);
+            _putchar(min + '0');
             _putchar('\n');
         }
     }
