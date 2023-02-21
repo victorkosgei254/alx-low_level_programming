@@ -1,13 +1,15 @@
 #include "main.h"
 void times_table(void)
 {
-    int i,j;
+    int i,j,prod;
 
     for( i = 0; i < 10; i++ )
     {
         for( j = 0; j < 10; j++)
         {
-            _putchar((i * j) + '0');
+            prod = i*j;
+            _putchar((prod%10) + '0');
+            _putchar(((prod - prod%10)/10) + '0');
             _putchar(',');
             _putchar(' ');
         }
