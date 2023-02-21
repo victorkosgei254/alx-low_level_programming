@@ -22,7 +22,7 @@ void print_times_table(int n)
         for( j = 1; j < n; j++)
         {
             prod = i*j;
-            if((prod > 9) && (prod < 99))
+            if((prod > 9) && (prod <= 99))
             {
                 _putchar(' ');
                 _putchar(((prod - prod%10)/10) + '0');
@@ -30,7 +30,7 @@ void print_times_table(int n)
                 _putchar(',');
                 _putchar(' ');
             }
-            if(prod > 99)
+            else if(prod > 99)
             {
                 _putchar(((prod -prod%100)/100) +'0');
                 _putchar(((prod-prod%10)/10)+'0');
@@ -49,7 +49,7 @@ void print_times_table(int n)
             }
         }
         prod = i*j;
-        if((prod > 9) && (prod < 99))
+        if((prod > 9) && (prod <= 99))
         {
             _putchar(' ');
             _putchar(((prod - prod%10)/10) + '0');
@@ -61,13 +61,13 @@ void print_times_table(int n)
             _putchar(((prod-prod%10)/10)+'0');
             _putchar((prod%10)+'0');
         }
-            else
-            {
-                _putchar(' ');
-                _putchar(' ');
-                _putchar((i*j) + '0');
-            }
-            _putchar('\n');
+        else
+        {
+            _putchar(' ');
+            _putchar(' ');
+            _putchar((i*j) + '0');
         }
-        return;
+        _putchar('\n');
     }
+    return;
+}
