@@ -5,7 +5,7 @@ int print_last_digit(int n)
     
    if(n == -2147483648)
     {
-        _putchar(8);
+        _putchar(8+'0');
         return 8;
     }
    else if(n < 0 )
