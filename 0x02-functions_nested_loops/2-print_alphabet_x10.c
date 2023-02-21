@@ -8,7 +8,7 @@ for (j = 97; j < 123; j++)
 {
     _putchar(j);
 }
-_putchar('\n')
+_putchar('\n');
 }
 return;
 }
