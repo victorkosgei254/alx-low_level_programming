@@ -8,12 +8,12 @@ void print_times_table(int n)
 {
     int i,j,prod;
 
-    for( i = 0; i < n; i++ )
+    for( i = 0; i <= n; i++ )
     {
         _putchar(0+'0');
         _putchar(',');
         _putchar(' ');
-        for( j = 1; j < 9; j++)
+        for( j = 1; j <= n; j++)
         {
             prod = i*j;
             if((prod > 9) && (prod < 99))
