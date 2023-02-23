@@ -20,7 +20,7 @@ int _isupper(int c);
  *
  * Return 0 if its a digit, 1 if its not 
  */
-int _isdigit(char c);
+int _isdigit(int c);
 /**
  * mul -Function that multiplies 2 intergers
  * @a -integer to be muliplied
