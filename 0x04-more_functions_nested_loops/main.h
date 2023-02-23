@@ -13,7 +13,7 @@ int _putchar(char c);
  *
  * Return 1 if is upper, 0 otherwise 
  */
-int _isupper(char c);
+int _isupper(int c);
 /**
  * _isdigit -Function that checks if input is a digint
  * @c -character to be checked 
