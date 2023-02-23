@@ -75,4 +75,10 @@ void print_square(int size);
  * Return void
  */
 void print_triangle(int size);
+/**
+ * fizz-buzz -Function that print fizbuzz
+ *
+ * Return void
+ */
+void fizz_buzz(void);
 #endif
