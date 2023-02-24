@@ -81,4 +81,6 @@ void print_triangle(int size);
  * Return void
  */
 void fizz_buzz(void);
+void print_number(int n);
+int reverse_number(int n);
 #endif
