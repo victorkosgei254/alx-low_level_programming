@@ -28,3 +28,16 @@ void fizz_buzz(void)
 		}
 	}
 }
+
+/**
+ * main - entry point
+ *
+ * Return: 0 Success
+ */
+
+int main(void)
+{
+	fizz_buzz();
+
+	return (0);
+}
