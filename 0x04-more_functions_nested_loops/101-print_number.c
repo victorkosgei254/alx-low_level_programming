@@ -31,8 +31,7 @@ void print_number(int n)
 
 	if (n == 0)
 	{
-		_putchar(n + '0');
-		_putchar('\n');
+		_putchar(48);
 		return;
 	}
 	else if (n < 0)
@@ -47,5 +46,4 @@ void print_number(int n)
 		reversed_number = (reversed_number - reversed_number % 10) / 10;
 		_putchar(last_digit + '0');
 	}
-	_putchar('\n');
 }
