@@ -15,9 +15,8 @@ void rev_string(char *s)
 		len++;
 		s++;
 	}
-	char newString[len + 1];
+	char newString[len];
 
-	newString[len + 1] = '\0';
 	for (i = 0; i <= len; i++)
 	{
 		newString[i] = *s--;
