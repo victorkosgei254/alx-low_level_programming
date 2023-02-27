@@ -9,19 +9,17 @@ void puts_half(char *str)
 {
 	int length, i;
 
+	char *copy = str;
+
 	length = 0;
 	while (*str != '\0')
 	{
 		length++;
 		str++;
 	}
-	for (i = 0; i <= length; i++)
+	for (i = length / 2; i < length; i++)
 	{
-		str--;
-	}
-	for (i = 1 + length / 2; i <= length; i++)
-	{
-		_putchar(*(str + i));
+		_putchar(copy[i]);
 	}
 	_putchar('\n');
 }
