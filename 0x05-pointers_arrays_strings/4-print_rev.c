@@ -9,15 +9,17 @@ void print_rev(char *s)
 {
 	int length, i;
 
+	char *copy = s;
+
 	length = 0;
 	while (*s != '\0')
 	{
 		length++;
 		s++;
 	}
-	for (i = 0; i <= length; i++)
+	for (i = length; i >= 0; i--)
 	{
-		_putchar(*s--);
+		_putchar(copy[i]);
 	}
 	_putchar('\n');
 }
