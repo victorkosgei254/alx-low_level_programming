@@ -12,6 +12,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	int length, i;
+	char *results;
 
 	char *copy = src;
 
@@ -21,7 +22,7 @@ char *_strcpy(char *dest, char *src)
 		length++;
 		src++;
 	}
-	char *results = malloc(length + 1);
+	results = malloc(length + 1);
 
 	for (i = 0; i <= length; i++)
 	{
