@@ -8,6 +8,7 @@
 void rev_string(char *s)
 {
 	int len, i;
+	char *newString;
 
 	len = 0;
 	while (*s != '\0')
@@ -15,7 +16,7 @@ void rev_string(char *s)
 		len++;
 		s++;
 	}
-	char* newString = alloca(len);
+	newString = alloca(len);
 
 	for (i = 0; i <= len; i++)
 	{
