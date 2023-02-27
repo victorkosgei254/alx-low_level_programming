@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * rev_string - Function that reverses a string
  * @s: String to be reversed
@@ -15,7 +15,7 @@ void rev_string(char *s)
 		len++;
 		s++;
 	}
-	char newString[len];
+	char* newString = alloca(len);
 
 	for (i = 0; i <= len; i++)
 	{
