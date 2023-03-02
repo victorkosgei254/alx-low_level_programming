@@ -13,7 +13,6 @@ char resolver(char x)
 {
 	char charset[10] = {'A', 'E', 'O', 'T', 'L', 'a', 'e', 'o', 't', 'l'};
 	char codes[5] = {'4', '3', '0', '7', '1'};
-	int i;
 
 	for (i = 0; i < 10; i++)
 	{
