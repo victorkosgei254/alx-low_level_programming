@@ -13,9 +13,9 @@ int _strcmp(char *s1, char *s2)
 	int flag;
 
 	flag = 0;
-	while (*s2 != '\0')
+	while ((*s2 != '\0') || (*s1 != '\0'))
 	{
-		if (*s2 != !s1)
+		if (*s2 != *s1)
 		{
 			flag = *s1 - *s2;
 			break;
