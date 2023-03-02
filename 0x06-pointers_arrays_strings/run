@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Running Tests"
+gcc -o test main.c putchar.c 0-strcat.c
+./test

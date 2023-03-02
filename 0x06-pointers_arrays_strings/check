@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Checking Betty Styles"
+betty 0-strcat.c
