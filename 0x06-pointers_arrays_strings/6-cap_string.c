@@ -44,6 +44,10 @@ char *cap_string(char *s)
 	int flag, i, str_len;
 	char *result,  *tmp;
 
+	if ((*s >= 97) && (*s <= 122))
+	{
+		*s = *s - 32;
+	}
 	tmp = s;
 	flag = 0;
 	while (*s != '\0')
