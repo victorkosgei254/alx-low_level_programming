@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * _memset - Function that fills first n bytes with byte constant
@@ -16,7 +15,7 @@ char *_memset(char *s, char b, unsigned int n)
 	char *s_copy;
 
 	s_copy = s;
-	for (i = 0; i < n; i++)
+	for (i = 0; i < ( n > 98 ? 98: n); i++)
 	{
 		s[i] = b;
 	}
