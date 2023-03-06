@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Building projects ...OK"
-gcc -std=gnu89 -o test main.c putchar.c 0-memset.c 1-memcpy.c
+gcc -std=gnu89 -o test main.c putchar.c 0-memset.c 1-memcpy.c 2-strchr.c
 
 echo "Build Successful ...OK"
 echo "Executing Tests..."
