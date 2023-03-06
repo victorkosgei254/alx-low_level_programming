@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Building projects ...OK"
-gcc -o test main.c putchar.c
+gcc -o test main.c putchar.c 0-memset.c
 
 echo "Build Successful ...OK"
 echo "Executing Tests..."
