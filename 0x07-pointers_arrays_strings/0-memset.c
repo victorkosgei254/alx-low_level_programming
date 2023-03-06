@@ -6,14 +6,14 @@
  * @b: Byte to be filled
  * @n: number of bytes to be filled.
  *
- * Return: Pointer to memory area
+ * Return: *s 
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
 
-	for (i = 0; i < ( n > 98 ? 98: n); i++)
+	for (i = 0; i < n; i++)
 	{
 		s[i] = b;
 	}
