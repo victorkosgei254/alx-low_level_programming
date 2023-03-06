@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Checking for betty compliance"
+betty filenames
+

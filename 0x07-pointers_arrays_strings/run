@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Building projects ...OK"
+gcc -o test main.c putchar.c
+
+echo "Build Successful ...OK"
+echo "Executing Tests..."
+./test
+echo "Done...OK"
