@@ -10,11 +10,10 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	char *s_copy, *accept_copy;
+	char *s_copy;
 	int maxIndex, tmp;
 
 	s_copy = s;
-	accept_copy = accept;
 	maxIndex = 0, tmp = 1;
 	while (*accept != '\0')
 	{
@@ -35,8 +34,8 @@ unsigned int _strspn(char *s, char *accept)
 		}
 		else
 		{
-			return maxIndex;
+			return (maxIndex);
 		}
 	}
-	return maxIndex;
+	return (maxIndex);
 }
