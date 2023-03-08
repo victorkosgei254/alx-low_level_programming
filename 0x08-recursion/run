@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Spawning zygote...OK"
+echo "RUNNING TEST SCRIPT"
+echo "===================="
+
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -o test putchar.c main.c
+
+echo "-----<END>------"
+echod "Embryo ...EXIT(bye)"
