@@ -9,4 +9,4 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -o test putchar.c main.c\
 
 ./test
 echo "-----<END>------"
-echod "Embryo ...EXIT(bye)"
+echo "Embryo ...EXIT(bye)"
