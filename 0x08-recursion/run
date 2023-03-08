@@ -3,7 +3,10 @@ echo "Spawning zygote...OK"
 echo "RUNNING TEST SCRIPT"
 echo "===================="
 
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -o test putchar.c main.c
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -o test putchar.c main.c\
+	 6-is_prime_number.c 5-sqrt_recursion.c 4-pow_recursion.c 3-factorial.c\
+	 2-strlen_recursion.c 1-print_rev_recursion.c 0-puts_recursion.c
 
+./test
 echo "-----<END>------"
 echod "Embryo ...EXIT(bye)"
