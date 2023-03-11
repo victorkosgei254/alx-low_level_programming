@@ -22,6 +22,10 @@ int numberOfCents(int amount)
 	{
 		return ((amount / 5) + numberOfCents(amount % 5));
 	}
+	else if ((amount >= 2) && (amount < 5))
+	{
+		return ((amount / 2) + numberOfCents(amount % 2));
+	}
 	else
 	{
 		return (amount);
@@ -48,8 +52,10 @@ int main(int argc, char **argv)
 	if (coin < 0)
 	{
 		print_num(0);
-		return (0);
 	}
-	print_num(numberOfCents(coin));
+	else
+	{
+		print_num(numberOfCents(coin));
+	}
 	return (0);
 }
