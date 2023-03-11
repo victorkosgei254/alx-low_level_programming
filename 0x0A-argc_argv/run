@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-mul.c _putchar.c
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 100-change.c _putchar.c

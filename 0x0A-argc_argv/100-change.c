@@ -37,7 +37,7 @@ int numberOfCents(int amount)
 
 int main(int argc, char **argv)
 {
-	int coin, cents;
+	int coin;
 
 	if (argc > 2)
 	{
