@@ -35,6 +35,10 @@ int str_toint(char *s)
 	}
 	while (*s != '\0')
 	{
+		if (!((*s >= 48) && (*s <= 57)))
+		{
+			return ('\0');
+		}
 		results = (results * 10 ) + (*s - '0');
 		s++;
 	}

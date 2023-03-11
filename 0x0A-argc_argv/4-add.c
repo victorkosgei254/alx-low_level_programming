@@ -41,6 +41,11 @@ int main(int argc, char **argv)
 	{
 		if (is_digit(*argv[i]))
 		{
+			if (str_toint(argv[i]) == '\0')
+			{
+				print("Error");
+				return (1);
+			}
 			results += str_toint(argv[i]);
 		}
 		else
