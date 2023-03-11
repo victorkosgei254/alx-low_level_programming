@@ -3,12 +3,11 @@
 /**
  * main - Entry point
  * @argc: number of commandline arguments
- * @argv: commandline arguments
  *
  * Return: (0) always
  */
 
-int main(int argc, char **argv)
+int main(int argc)
 {
 	argc = argc - 1;
 	_putchar(argc + '0');
