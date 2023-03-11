@@ -47,6 +47,10 @@ void print_num(int x)
 		_putchar('-');
 		x = x * -1;
 	}
+	else if (x == 0)
+	{
+		_putchar('0');
+	}
 	while (x != 0)
 	{
 		_putchar((x % 10) + '0');
