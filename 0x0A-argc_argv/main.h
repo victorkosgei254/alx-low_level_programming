@@ -40,21 +40,30 @@ int str_toint(char *s)
 	}
 	return (results * flag);
 }
+
+void recycler(int x)
+{
+	if (x != 0)
+	{
+		recycler((x - (x % 10)) / 10);
+		_putchar((x % 10) + '0');
+	}
+}
 void print_num(int x)
 {
 	if (x < 0)
 	{
 		_putchar('-');
 		x = x * -1;
+		recycler(x);
 	}
 	else if (x == 0)
 	{
 		_putchar('0');
 	}
-	while (x != 0)
+	else
 	{
-		_putchar((x % 10) + '0');
-		x = (x - (x % 10)) / 10;
+		recycler(x);
 	}
 	_putchar('\n');
 }
