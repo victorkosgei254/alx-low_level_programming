@@ -15,13 +15,9 @@ char *str_concat(char *s1, char *s2)
 	int s1_count, s2_count, i, total_count;
 	char *buffer, *s1_copy, *s2_copy;
 
-	if (s1 == NULL)
+	if ((s1 == NULL) && (s2 == NULL))
 	{
-		s1 = "";
-	}
-	else if (s2 == NULL)
-	{
-		s2 = "";
+		return (NULL);
 	}
 	s1_count = 0, s2_count = 0, i = 0;
 	s1_copy = s1, s2_copy = s2;
