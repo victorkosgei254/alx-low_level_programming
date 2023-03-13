@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2_count++, s2_copy++;
 	}
-	total_count = s1_count + s2_count + 2;
+	total_count = s1_count + s2_count + 1;
 	buffer = malloc(total_count * sizeof(char));
 	if (buffer == NULL)
 	{
