@@ -14,6 +14,10 @@ char *_strdup(char *str)
 	char *copy, *buffer;
 	int size, i;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	size = 0, i = 0;
 	copy = str;
 	while (*copy != '\0')
