@@ -44,9 +44,9 @@ char *str_concat(char *s1, char *s2)
 	{
 		buffer[i] = s1[i];
 	}
-	for (i = s1_count; i <= (s2_count + s1_count); i++)
+	for (i = 0; i <= s2_count; i++)
 	{
-		buffer[i] = s2[i];
+		buffer[i + s1_count] = s2[i];
 	}
 	return (buffer);
 }
