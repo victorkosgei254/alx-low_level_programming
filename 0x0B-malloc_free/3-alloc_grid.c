@@ -13,7 +13,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **buffer, i;
+	int **buffer, i, j;
 
 	if ((width <= 0) || (height <= 0))
 	{
@@ -27,7 +27,14 @@ int **alloc_grid(int width, int height)
 	for (i = 0; i < height; i++)
 	{
 		buffer[i] = malloc(width * sizeof(int));
-		memset(buffer[i], 0, width);
+	}
+
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+		{
+			buffer[i][j] = 0;
+		}
 	}
 	return (buffer);
 }
