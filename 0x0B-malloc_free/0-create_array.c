@@ -20,6 +20,10 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	buffer = malloc(size * sizeof(char));
+	if (buffer == NULL)
+	{
+		return (NULL);
+	}
 	buffer[size] = '\0';
 	for (i = 0; i < size; i++)
 	{

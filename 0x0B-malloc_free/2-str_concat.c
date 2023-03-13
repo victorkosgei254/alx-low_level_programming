@@ -30,6 +30,10 @@ char *str_concat(char *s1, char *s2)
 		s2_count++, s2_copy++;
 	}
 	buffer = malloc((s1_count + s2_count) * sizeof(char));
+	if (buffer == NULL)
+	{
+		return (NULL);
+	}
 	buffer[(s1_count + s2_count)] = '\0';
 	for (i = 0; i < s1_count; i++)
 	{
