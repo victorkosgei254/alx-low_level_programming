@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <string.h>
-
+#include <stdio.h>
 /**
  * alloc_grid - Allocate 2D array
  * @width: the width of the grid array
@@ -19,27 +19,14 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	buffer = malloc(height * sizeof(int));
-	memset(buffer, 0, height * sizeof(int));
+	buffer = (int **)malloc(height * sizeof(int));
 	if (buffer == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < height; i++)
 	{
-		*(buffer + i) = malloc(width * sizeof(int));
-		if (*(buffer + i) == NULL)
-		{
-			free(buffer);
-			return (NULL);
-		}
-	}
-	for (i = 0; i < height; i++)
-	{
-		for (j = 0; j < width; j++)
-		{
-			buffer[i][j] = 0;
-		}
+		*(buffer + i) = (int *)malloc(width * sizeof(int));
 	}
 	return (buffer);
 }
