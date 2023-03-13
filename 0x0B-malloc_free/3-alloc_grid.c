@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stddef.h>
 
 /**
  * alloc_grid - Allocate 2D array
