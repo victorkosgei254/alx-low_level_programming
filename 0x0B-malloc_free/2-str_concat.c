@@ -12,18 +12,14 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int s1_count, s2_count, i;
+	int s1_count, s2_count, i, total_count;
 	char *buffer, *s1_copy, *s2_copy;
 
-	if ((s1 == NULL) && (s2 == NULL))
-	{
-		return (NULL);
-	}
 	if (s1 == NULL)
 	{
 		s1 = "";
 	}
-	else if(s2 == NULL)
+	else if (s2 == NULL)
 	{
 		s2 = "";
 	}
@@ -37,17 +33,18 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2_count++, s2_copy++;
 	}
-	buffer = malloc((s1_count + s2_count) * sizeof(char));
+	total_count = s1_count + s2_count + 2;
+	buffer = malloc(total_count * sizeof(char));
 	if (buffer == NULL)
 	{
 		return (NULL);
 	}
-	buffer[(s1_count + s2_count)] = '\0';
-	for (i = 0; i < s1_count; i++)
+	buffer[total_count] = '\0';
+	for (i = 0; i <= s1_count; i++)
 	{
 		buffer[i] = s1[i];
 	}
-	for (i = s1_count; i < (s2_count + s1_count); i++)
+	for (i = s1_count; i <= (s2_count + s1_count); i++)
 	{
 		buffer[i] = s2[i];
 	}
