@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stddef.h>
+#include <string.h>
 
 /**
  * alloc_grid - Allocate 2D array
@@ -26,6 +27,7 @@ int **alloc_grid(int width, int height)
 	for (i = 0; i < height; i++)
 	{
 		buffer[i] = malloc(width * sizeof(int));
+		memset(buffer[i], 0, width);
 	}
 	return (buffer);
 }
