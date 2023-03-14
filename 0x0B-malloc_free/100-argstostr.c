@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -64,6 +65,10 @@ char *argstostr(int ac, char **av)
 	char *s;
 	int i;
 
+	if ((ac == 0) || (av == NULL))
+	{
+		return (NULL);
+	}
 	s = str_concat(av[0], "\n");
 	for (i = 1; i < ac; i++)
 	{
