@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdlib.h>
+#include <stddef.h>
 
 /**
  * malloc_checked - Function allocated memmory using malloc
@@ -10,11 +12,14 @@
 void *malloc_checked(unsigned int b)
 {
 	void *memory;
+	int status;
 
+	status = 98;
 	memory = malloc(b);
 	if (memory == NULL)
 	{
-		return (98);
+		memory = &status;
+		return (memory);
 	}
 	return (memory);
 }
