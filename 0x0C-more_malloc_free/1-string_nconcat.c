@@ -31,7 +31,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			s2_len++, s2_copy++;
 		}
 	}
-	if (n > s2_len)
+	if (n >= s2_len)
 	{
 		n = s2_len;
 	}
