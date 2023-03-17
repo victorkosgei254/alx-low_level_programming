@@ -12,14 +12,11 @@
 void *malloc_checked(unsigned int b)
 {
 	void *memory;
-	int status;
 
-	status = 98;
 	memory = malloc(b);
 	if (memory == NULL)
 	{
-		memory = &status;
-		return (memory);
+		exit(3);
 	}
 	return (memory);
 }
