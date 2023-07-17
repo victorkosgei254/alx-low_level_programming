@@ -1,0 +1,23 @@
+#!/bin/bash
+if [ "$1" = "help" ]
+then 
+    echo Help message
+elif [ "$1" = "check" ]
+then 
+    gcc -o test test.c
+    ./test
+else
+    gcc -o test test.c testimp.c 0-malloc_checked.c 1-string_nconcat.c 2-calloc.c 3-array_range.c
+    for arg in "$@"
+    do 
+        if [ "$arg" = "testone" ]
+        then 
+            echo "Test One"
+            ./test $arg
+            echo $?
+
+        else 
+            ./test $arg
+        fi
+    done
+fi
